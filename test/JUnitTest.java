@@ -40,6 +40,42 @@ public class JUnitTest {
     @Test
     public void test1() {
         Bankier b = new Bankier(6000, true, true);
+        System.out.println("Dochody: " + b.getIncome() + " Ma kartę?: " + b.isHasCreditCard() + " Wniosek o kredyt?: " + b.isCreditApplication());
+        System.out.println("Oferta karty: " + b.CreditCardOffer() + " Oferta kredytu: " + b.CreditOffer() + " Przyznanie kredytu: " + b.CreditApproval());
+    }
+
+    @Test
+    public void test2() {
+        Bankier b = new Bankier(3500, true, false);
+        System.out.println("Dochody: " + b.getIncome() + " Ma kartę?: " + b.isHasCreditCard() + " Wniosek o kredyt?: " + b.isCreditApplication());
+        System.out.println("Oferta karty: " + b.CreditCardOffer() + " Oferta kredytu: " + b.CreditOffer() + " Przyznanie kredytu: " + b.CreditApproval());
+    }
+
+    @Test
+    public void test3() {
+        Bankier b = new Bankier(5000.01, false, true);
+        System.out.println("Dochody: " + b.getIncome() + " Ma kartę?: " + b.isHasCreditCard() + " Wniosek o kredyt?: " + b.isCreditApplication());
+        System.out.println("Oferta karty: " + b.CreditCardOffer() + " Oferta kredytu: " + b.CreditOffer() + " Przyznanie kredytu: " + b.CreditApproval());
+    }
+
+    @Test
+    public void test4() {
+        Bankier b = new Bankier(6000, false, false);
+        System.out.println("Dochody: " + b.getIncome() + " Ma kartę?: " + b.isHasCreditCard() + " Wniosek o kredyt?: " + b.isCreditApplication());
+        System.out.println("Oferta karty: " + b.CreditCardOffer() + " Oferta kredytu: " + b.CreditOffer() + " Przyznanie kredytu: " + b.CreditApproval());
+    }
+
+    @Test
+    public void test5() {
+        Bankier b = new Bankier(1000, true, true);
+        System.out.println("Dochody: " + b.getIncome() + " Ma kartę?: " + b.isHasCreditCard() + " Wniosek o kredyt?: " + b.isCreditApplication());
+        System.out.println("Oferta karty: " + b.CreditCardOffer() + " Oferta kredytu: " + b.CreditOffer() + " Przyznanie kredytu: " + b.CreditApproval());
+    }
+
+    @Test
+    public void test6() {
+        Bankier b = new Bankier(0, false, false);
+        System.out.println("Dochody: " + b.getIncome() + " Ma kartę?: " + b.isHasCreditCard() + " Wniosek o kredyt?: " + b.isCreditApplication());
         System.out.println("Oferta karty: " + b.CreditCardOffer() + " Oferta kredytu: " + b.CreditOffer() + " Przyznanie kredytu: " + b.CreditApproval());
     }
 }

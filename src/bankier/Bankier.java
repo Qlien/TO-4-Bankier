@@ -50,6 +50,18 @@ public class Bankier {
         return creditApproval;
     }
 
+    public double getIncome() {
+        return income;
+    }
+
+    public boolean isHasCreditCard() {
+        return hasCreditCard;
+    }
+
+    public boolean isCreditApplication() {
+        return creditApplication;
+    }
+
     /**
      * @param args the command line arguments
      */
