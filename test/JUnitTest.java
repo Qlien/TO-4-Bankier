@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 
+import bankier.Bankier;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -36,9 +37,9 @@ public class JUnitTest {
     public void tearDown() {
     }
 
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
-    //
-    // @Test
-    // public void hello() {}
+    @Test
+    public void test1() {
+        Bankier b = new Bankier(6000, true, true);
+        System.out.println("Oferta karty: " + b.CreditCardOffer() + " Oferta kredytu: " + b.CreditOffer() + " Przyznanie kredytu: " + b.CreditApproval());
+    }
 }
